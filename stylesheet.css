@@ -1,0 +1,7017 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+  /*grid-template-rows: repeat(65, 75px);*/
+  /*Each row is about 185px high*/
+}
+
+.Layer_1 {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  display: flex;
+  align-content: center;
+  margin: 0;
+  padding: 20px 20px 20px 0px;
+}
+
+
+
+nav {
+  grid-column: 6/14;
+  margin: 0;
+  padding: 20px;
+  color: #ffffff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  grid-row: 1/2;
+  align-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  grid-row: 1/2;
+  align-content: center;
+}
+
+.NavThingy {
+  background-image: url("NavThingy2.png");
+  grid-column: 5/15;
+  grid-row: 1/2;
+  height: 150%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.NavInsurance {
+  grid-column: 10/15;
+  grid-row: 1/2;
+  background-color: #032733;
+}
+
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.logo {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-content: center;
+  object-position: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.Hleft2 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/8;
+  width: 100%;
+}
+
+#Hhero {
+  background-image: url("websiteContentOpt/MAHHero-min.jpg");
+  grid-column: 1/15;
+  grid-row: 2/8;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.HheroText {
+  grid-column: 2/9;
+  grid-row: 3/5;
+}
+
+/*Calls to Action buttons*/
+
+/* acting resume */
+
+.cta-ARwrapper {
+  padding-top: 25px;
+  display: block;
+  text-align: left;
+  grid-column: 2/8;
+  grid-row: 6/8;
+}
+
+.cta-AR {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  width: 50%;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+.cta-AR:hover {
+  color: #032733;
+}
+
+a.cta-AR {
+  color: white;
+}
+
+
+
+.Hleft3 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+.HBlock1 {
+  display: grid;
+  grid-column: 2/13;
+  grid-row: 8/14;
+  color: #032733;
+}
+
+p {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.HBlockp {
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 35px;
+}
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin: 0;
+  padding-top: 35px;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 3;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.cta-CMwrapper {
+  display: block;
+  text-align: left;
+  margin: 0;
+  grid-column: 2/6;
+  grid-row: 14/15;
+}
+
+a.cta-CM {
+  color: white;
+}
+
+.cta-CM {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em 2.5em;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+a.cta-CM {
+  color: white;
+}
+
+.cta-CM:hover {
+  color: #032733;
+}
+
+
+
+.HBlock2 {
+  display: grid;
+  grid-row: 14/15;
+  grid-column: 2/4;
+  background-color: #032733;
+}
+
+.Hright3 {
+  width: 100%;
+  grid-column: 13/15;
+  grid-row: 8/14;
+}
+
+.Hleft4 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 16/23;
+  background-color: #032733;
+}
+
+.HServicesbackground {
+  background-color: #032733;
+  grid-row: 16/24;
+  grid-column: 1/-1;
+}
+
+.HSelectedPastWorksFullWidth {
+  grid-row: 16/23;
+  grid-column: 1/-1;
+  background-color: #032733;
+}
+
+.HServices1 {
+  color: #ffffff;
+  background-color: #032733;
+  grid-column: 2/6;
+  grid-row: 16/23;
+  padding-top: 70px;
+}
+
+.HServices2 {
+  color: #ffffff;
+  background-color: #032733;
+  grid-column: 6/10;
+  grid-row: 16/23;
+  padding-top: 70px;
+}
+
+.Hright4 {
+  width: 100%;
+  grid-column: 14/15;
+  grid-row: 16/23;
+  background-color: #032733;
+}
+
+.HServices3 {
+  color: #ffffff;
+  background-color: #032733;
+  grid-column: 10/14;
+  grid-row: 16/23;
+  padding-top: 70px;
+}
+
+/*Selected Past Works*/
+
+.HBoxStageActing {
+  border-style: solid;
+  grid-column: 2/13;
+  grid-row: 26/31;
+  border-width: 5px;
+  color: #032733;
+}
+
+.HSelectedPastWorks {
+  grid-column: 2/14;
+  grid-row: 24/25;
+  padding: 25px 0px 0px 0px;
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+}
+
+.StageActing {
+  grid-column: 3/6;
+  grid-row: 25/27;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  padding-top: 50px;
+  padding-left: 25px;
+  color: #577b80;
+}
+
+.StageActingPic {
+  grid-column: 8/14;
+  grid-row: 27/32;
+  background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+p a:link {
+  color: #032733;
+  text-decoration: none;
+}
+
+p a:visited {
+  color: #032733;
+  text-decoration: none;
+}
+
+p a:active {
+  color: #032733;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #032733;
+  text-decoration: none;
+  color: #90c7cf;
+}
+
+.StageActingP1 {
+  display: flex;
+  align-content: center;
+  grid-column: 3/9;
+  grid-row: 27/28;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+.StageActingP2 {
+  grid-column: 3/9;
+  grid-row: 28/29;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+.StageActingP3 {
+  grid-column: 3/9;
+  grid-row: 29/30;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+/* Directing */
+
+.HBoxDirecting {
+  border-style: solid;
+  grid-column: 3/14;
+  grid-row: 33/38;
+  border-width: 5px;
+  color: #032733;
+}
+
+.HDirectingPast {
+  grid-column: 9/12;
+  grid-row: 32/34;
+  background-color: white;
+  padding-left: 25px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: #577b80;
+}
+
+.HDirectingPic {
+  grid-column: 2/8;
+  grid-row: 34/39;
+  background-image: url("websiteContentOpt/Twelve-Angry-Men17-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.HDirectingP1 {
+  display: flex;
+  align-content: center;
+  grid-column: 8/14;
+  grid-row: 34/35;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+.HDirectingP2 {
+  display: flex;
+  align-content: center;
+  grid-column: 8/14;
+  grid-row: 35/36;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+.HDirectingP3 {
+  display: flex;
+  align-content: center;
+  grid-column: 8/14;
+  grid-row: 36/37;
+  padding-left: 25px;
+  padding-top: 0px;
+  color: #032733;
+}
+
+/* VO */
+
+.HBoxVO {
+  border-style: solid;
+  grid-column: 2/13;
+  grid-row: 40/43;
+  border-width: 5px;
+  border-color: #032733;
+}
+
+.HVO {
+  grid-column: 2/5;
+  grid-row: 39/41;
+  background-color: white;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: #577b80;
+}
+
+.Hbook1 {
+  grid-column: 3/6;
+  grid-row: 41/45;
+  width: auto;
+  height: 95%;
+  object-fit: cover;
+}
+
+.Hbook1:hover {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Hbook2 {
+  grid-column: 7/9;
+  grid-row: 41/45;
+  width: auto;
+  height: 95%;
+  object-fit: cover;
+}
+
+.Hbook2:hover {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Hbook3 {
+  grid-column: 11/14;
+  grid-row: 41/45;
+  width: auto;
+  height: 95%;
+  object-fit: cover;
+}
+
+.Hbook3:hover {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.IendBuffer {
+  grid-row: 45/46;
+}
+
+/*Work Services*/
+
+#WShero {
+  background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+  grid-column: 1/15;
+  grid-row: 2/8;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.WSheroText {
+  grid-column: 9/13;
+  grid-row: 3/4;
+  color: white;
+  padding: 0;
+}
+
+
+
+/*Stage Acting Block*/
+.WSStageActingClickable {
+  grid-column: 2/5;
+  grid-row: 9/12;
+  background-color: #032733;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.WSStageActingClickable:hover {
+  background-color: #577b80;
+}
+
+a.WSstageActingBlock {
+  color: white;
+}
+
+.WSstageActingBlock {
+  color: white;
+}
+
+.StageActingBlockP {
+  grid-column: 2/5;
+  grid-row: 11/12;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 0 0;
+}
+.WSstageActingBlock {
+  color: white;
+}
+
+/*Directing Block*/
+.WSDirectingClickable {
+  grid-column: 6/9;
+  grid-row: 9/12;
+  background-color: #032733;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.WSDirectingClickable:hover {
+  background-color: #577b80;
+}
+
+.WSDirectingBlock {
+  color: white;
+}
+
+a.WSDirectingBlock {
+  color: white;
+}
+
+.WSDirectingBlockP {
+  grid-column: 6/9;
+  grid-row: 11/12;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 0 0;
+}
+
+.WSDirectingClickable:hover {
+  background-color: #577b80;
+}
+
+a.WSDirectingBlock {
+  color: white;
+}
+
+/* VO Clickable*/
+
+.WSVOClickable {
+  grid-column: 10/13;
+  grid-row: 9/12;
+  background-color: #032733;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.WSVOClickable:hover {
+  background-color: #577b80;
+}
+
+.WSVOBlock {
+  color: white;
+}
+
+a.WSVOBlock {
+  color: white;
+}
+
+.WSVOBlockP {
+  grid-column: 6/9;
+  grid-row: 11/12;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 0 0;
+}
+
+.WSVOClickable:hover {
+  background-color: #577b80;
+}
+
+a.WSVOBlock {
+  color: white;
+}
+
+/*WSSStageActingGrey*/
+.WSStageActingGrey {
+  grid-column: 1/16;
+  grid-row: 13/23;
+  background-color: white;
+}
+
+.WSSStageActingP {
+  grid-column: 3/8;
+  grid-row: 15/18;
+  color: #032733;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.WSStageActing {
+  grid-column: 2/5;
+  grid-row: 13/15;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background-color: white;
+}
+
+a.cta-WSAR {
+  color: white;
+}
+
+a.cta-WSAR:hover {
+  color: #032733;
+}
+
+.cta-WSARwrapper {
+  display: block;
+  text-align: center;
+  grid-column: 2/8;
+  grid-row: 19/20;
+}
+
+.cta-WSAR {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  width: 50%;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+.cta-WSAR:hover {
+  color: #032733;
+}
+
+.WSSStageActingGreyBox {
+  border-style: solid;
+  grid-column: 2/13;
+  grid-row: 14/21;
+  border-width: 5px;
+  border-color: #032733;
+}
+
+.WSStageActingGreyPict {
+  grid-column: 9/14;
+  grid-row: 15/22;
+  background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*WSDirectingWhite*/
+
+.WSSDirectingWhite {
+  grid-column: 10/12;
+  background-color: #ececec;
+  grid-row: 23/25;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 10px;
+}
+
+.WSDirectingGrey {
+  grid-column: 1/-1;
+  grid-row: 23/33;
+  background-color: #ececec;
+}
+.WSSDirectingWhiteP {
+  grid-column: 8/13;
+  grid-row: 25/29;
+  color: #032733;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.WSDirectingyWhiteBox {
+  border-style: solid;
+  grid-column: 3/14;
+  grid-row: 24/32;
+  border-width: 5px;
+  border-color: #032733;
+}
+
+.cta-WSDRwrapper {
+  display: block;
+  text-align: center;
+  grid-column: 8/12;
+  grid-row: 29/30;
+}
+
+.cta-WSDR {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  width: 65%;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+a.cta-WSDR {
+  color: white;
+}
+
+.cta-WSDR:hover {
+  color: #032733;
+}
+
+.WSSDirectingyWhitePict {
+  grid-column: 2/7;
+  grid-row: 25/31;
+  background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+/*WSVOGrey*/
+
+.WSVOGrey {
+  grid-column: 1/15;
+  grid-row: 33/41;
+  background-color: white;
+}
+
+.WSVOGreyTitle {
+  grid-column: 2/5;
+  grid-row: 33/35;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.WSVOGreyBox {
+  border-style: solid;
+  grid-column: 2/14;
+  grid-row: 34/39;
+  border-width: 5px;
+  border-color: #032733;
+}
+
+.WSVOGreyP {
+  grid-column: 3/8;
+  grid-row: 35/38;
+  color: #032733;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.WSlilaLama{
+  grid-column: 6/14;
+  grid-row: 37/38;
+  padding-top: 80px;
+  padding-left: 20px;
+  color:#032733;
+  font-family: futura PT, sans-serif;
+
+}
+
+.WSAudioControls {
+  grid-column: 6/14;
+  grid-row: 38/39;
+  display: flex;
+  align-content: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.cta-WSV0Rwrapper {
+  display: block;
+  text-align: center;
+  grid-column: 9/13;
+  grid-row: 36/37;
+}
+
+.cta-WSV0R {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  width: 50%;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+.cta-WSV0R:hover {
+  color: #032733;
+}
+
+/*Gallery*/
+
+.WSGalleryTitle {
+  grid-column: 2/5;
+  grid-row: 41/43;
+}
+
+.WSGalleryBox {
+  display: none;
+}
+
+.gallery {
+  grid-column: 2/14;
+  grid-row: 43/57;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(6, 150px);
+  grid-gap: 10px;
+}
+
+.galleryImage1 {
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  grid-column: 2/4;
+  padding: 0;
+}
+
+.Nested1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+/*
+.Image1ModalClass {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #032733;
+  opacity: 0.75;
+}
+
+.Image1Modal-Content {
+  margin: auto;
+  display: block;
+  width: 75%;
+  max-width: 85%;
+}
+
+.modal-content {
+  margin: auto;
+  width: 85%;
+}
+
+.close {
+  color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+}
+
+.Nested1:hover {
+  border: solid 4px #90c7cf;
+}
+*/
+
+.Nested2 {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.Nested3 {
+  grid-row: 1/5;
+  grid-column: 3/3;
+}
+
+.Nested4 {
+  grid-row: 3/5;
+  grid-column: 1/3;
+}
+
+.Nested5 {
+  grid-row: 5/7;
+  grid-column: 1/2;
+}
+
+.Nested6 {
+  grid-row: 5/7;
+  grid-column: 2/4;
+}
+
+.Image1 {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+.Image2 {
+  object-fit: cover;
+  object-position: 75% 35%;
+  height: 100%;
+  width: 100%;
+}
+
+.Image3 {
+  object-fit: cover;
+  object-position: 70% 30%;
+  height: 100%;
+  width: 100%;
+}
+
+.Image4 {
+  object-fit: cover;
+  object-position: 70% 30%;
+  height: 100%;
+  width: 100%;
+}
+
+.Image5 {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+.Image6 {
+  object-fit: cover;
+  object-position: 75% 12%;
+  height: 100%;
+  width: 100%;
+}
+
+/*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+.cta-WSCMwrapper {
+  display: block;
+  text-align: center;
+  margin: 0;
+  grid-column: 6/10;
+  grid-row: 56/57;
+}
+
+.cta-WSCM {
+  border: none;
+  border-radius: 1em;
+  color: white;
+  background-color: orange;
+  box-shadow: 2px 2px 2px orange;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-family: futura PT, sans-serif;
+}
+
+.cta-WSCM:hover {
+  color: #032733;
+}
+
+.WSendBuffer {
+  grid-row: 57/58;
+}
+
+/* footer */
+
+footer p {
+  background-color: #032733;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 16px;
+  height: 100px;
+}
+
+
+
+.footEmail {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footCopyright {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+ p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+ p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+ p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .Hleft1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  nav {
+    grid-column: 5/14;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    grid-row: 1/2;
+    align-content: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    grid-row: 1/2;
+    align-content: center;
+  }
+
+  nav ul li {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .NavThingy {
+    background-image: url("NavThingy2.png");
+    grid-column: 4/15;
+    grid-row: 1/2;
+    height: 150%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .NavInsurance {
+    grid-column: 10/15;
+    grid-row: 1/2;
+    background-color: #032733;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 1/5;
+  grid-row: 1/2;
+  padding-top: 10px;
+  padding-left: 10px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 85%;
+    height: auto;
+  }
+
+
+  .Hleft2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/8;
+    width: 100%;
+  }
+
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/15;
+    grid-row: 2/8;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/10;
+    grid-row: 3/5;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/8;
+    grid-row: 6/8;
+    padding-top: 25px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+
+  a.cta-AR {
+    color: white;
+  }
+
+
+
+  .Hleft3 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 8/14;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/8;
+    grid-row: 14/15;
+    padding-top: 25px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .Hright3 {
+    width: 100%;
+    grid-column: 13/15;
+    grid-row: 8/14;
+  }
+
+  .Hleft4 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 16/23;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 16/25;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-row: 16/25;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 2/6;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 6/10;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  .Hright4 {
+    width: 100%;
+    grid-column: 14/15;
+    grid-row: 16/23;
+    background-color: #032733;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 10/14;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    border-style: solid;
+    grid-column: 2/13;
+    grid-row: 28/33;
+    border-width: 5px;
+    color: #032733;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 26/28;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .StageActing {
+    grid-column: 3/6;
+    grid-row: 27/29;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-top: 50px;
+    padding-left: 15px;
+    color: #577b80;
+  }
+
+  .StageActingPic {
+    grid-column: 9/14;
+    grid-row: 29/34;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 20px;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 3/12;
+    grid-row: 29/30;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .StageActingP2 {
+    grid-column: 3/12;
+    grid-row: 30/31;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 3/12;
+    grid-row: 31/32;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    border-style: solid;
+    grid-column: 3/14;
+    grid-row: 36/41;
+    border-width: 5px;
+    color: #032733;
+  }
+
+  .HDirectingPast {
+    grid-column: 9/13;
+    grid-row: 35/37;
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #577b80;
+  }
+
+  .HDirectingPic {
+    grid-column: 2/8;
+    grid-row: 37/42;
+    margin-right: 20px;
+    background-image: url("websiteContentOpt/Twelve-Angry-Men17-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 37/38;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 38/39;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 39/40;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    border-style: solid;
+    grid-column: 2/13;
+    grid-row: 43/46;
+    border-width: 5px;
+    border-color: #032733;
+  }
+
+  .HVO {
+    grid-column: 2/5;
+    grid-row: 42/44;
+    background-color: white;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #577b80;
+  }
+
+  .Hbook1 {
+    grid-column: 3/5;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook1:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 7/10;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook2:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Hbook3 {
+    grid-column: 11/14;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook3:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .IendBuffer {
+    grid-row: 47/48;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    margin: 0; 
+    background-color: white;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+ p  a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .Hleft1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  nav {
+    grid-column: 5/14;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    grid-row: 1/2;
+    align-content: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    grid-row: 1/2;
+    align-content: center;
+  }
+
+  nav ul li {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .NavThingy {
+    background-image: url("NavThingy2.png");
+    grid-column: 4/15;
+    grid-row: 1/2;
+    height: 150%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .NavInsurance {
+    grid-column: 10/15;
+    grid-row: 1/2;
+    background-color: #032733;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 85%;
+    height: auto;
+  }
+
+
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/15;
+    grid-row: 2/8;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/10;
+    grid-row: 3/5;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/8;
+    grid-row: 6/8;
+    padding-top: 25px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+
+  a.cta-AR {
+    color: white;
+  }
+
+
+  .Hleft3 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 8/14;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/8;
+    grid-row: 14/15;
+    padding-top: 25px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .Hright3 {
+    width: 100%;
+    grid-column: 13/15;
+    grid-row: 8/14;
+  }
+
+  .Hleft4 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 16/23;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 16/25;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-row: 16/25;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 2/6;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 6/10;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  .Hright4 {
+    width: 100%;
+    grid-column: 14/15;
+    grid-row: 16/23;
+    background-color: #032733;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    background-color: #032733;
+    grid-column: 10/14;
+    grid-row: 16/23;
+    padding-top: 70px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    border-style: solid;
+    grid-column: 2/13;
+    grid-row: 28/33;
+    border-width: 5px;
+    color: #032733;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 26/28;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .StageActing {
+    grid-column: 3/6;
+    grid-row: 27/29;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-top: 50px;
+    padding-left: 15px;
+    color: #577b80;
+  }
+
+  .StageActingPic {
+    grid-column: 9/14;
+    grid-row: 29/34;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 20px;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 3/12;
+    grid-row: 29/30;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .StageActingP2 {
+    grid-column: 3/12;
+    grid-row: 30/31;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 3/12;
+    grid-row: 31/32;
+    padding-left: 15px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    border-style: solid;
+    grid-column: 3/14;
+    grid-row: 36/41;
+    border-width: 5px;
+    color: #032733;
+  }
+
+  .HDirectingPast {
+    grid-column: 9/13;
+    grid-row: 35/37;
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #577b80;
+  }
+
+  .HDirectingPic {
+    grid-column: 2/8;
+    grid-row: 37/42;
+    margin-right: 20px;
+    background-image: url("websiteContentOpt/Twelve-Angry-Men17-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 37/38;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 38/39;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 8/14;
+    grid-row: 39/40;
+    padding-left: 0;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.45rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    border-style: solid;
+    grid-column: 2/13;
+    grid-row: 43/46;
+    border-width: 5px;
+    border-color: #032733;
+  }
+
+  .HVO {
+    grid-column: 2/5;
+    grid-row: 42/44;
+    background-color: white;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #577b80;
+  }
+
+  .Hbook1 {
+    grid-column: 3/5;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook1:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 7/10;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook2:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Hbook3 {
+    grid-column: 11/14;
+    grid-row: 44/47;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .Hbook3:hover {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .IendBuffer {
+    grid-row: 47/48;
+  }
+
+  /*Work Services*/
+
+  #WShero {
+    background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+    grid-column: 1/-1;
+    grid-row: 2/8;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .WSheroText {
+    grid-column: 9/15;
+    grid-row: 3/4;
+    color: white;
+    padding: 0;
+  }
+
+ 
+  /*Stage Acting Block*/
+  .WSStageActingClickable {
+    grid-column: 2/5;
+    grid-row: 9/12;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+  }
+
+  .WSStageActingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSstageActingBlock {
+    color: white;
+  }
+
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  .StageActingBlockP {
+    grid-column: 2/5;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+  }
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  /*Directing Block*/
+  .WSDirectingClickable {
+    grid-column: 6/9;
+    grid-row: 9/12;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSDirectingBlock {
+    color: white;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  .WSDirectingBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0px;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  /* VO Clickable*/
+
+  .WSVOClickable {
+    grid-column: 10/13;
+    grid-row: 9/12;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSVOBlock {
+    color: white;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  .WSVOBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+  /*WSSStageActingGrey*/
+  .WSStageActingGrey {
+    grid-column: 1/16;
+    grid-row: 13/23;
+    background-color: white;
+  }
+
+  .WSSStageActingP {
+    grid-column: 3/8;
+    grid-row: 15/18;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .WSStageActing {
+    grid-column: 2/5;
+    grid-row: 13/15;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    background-color: white;
+  }
+
+  .cta-WSARwrapper {
+    display: inline;
+    text-align: center;
+    grid-column: 3/8;
+    grid-row: 20/21;
+  }
+
+  .cta-WSAR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSAR:hover {
+    color: #032733;
+  }
+
+  .WSSStageActingGreyBox {
+    border-style: solid;
+    grid-column: 2/13;
+    grid-row: 14/22;
+    border-width: 5px;
+    border-color: #032733;
+  }
+
+  .WSStageActingGreyPict {
+    grid-column: 9/14;
+    grid-row: 16/23;
+    background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /*WSDirectingWhite*/
+
+  .WSSDirectingWhite {
+    grid-column: 10/13;
+    background-color: #ececec;
+    grid-row: 24/26;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .WSDirectingGrey {
+    grid-column: 1/-1;
+    grid-row: 24/34;
+    background-color: #ececec;
+  }
+  .WSSDirectingWhiteP {
+    grid-column: 8/13;
+    grid-row: 26/30;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .WSDirectingyWhiteBox {
+    border-style: solid;
+    grid-column: 3/14;
+    grid-row: 25/33;
+    border-width: 5px;
+    border-color: #032733;
+  }
+
+  .cta-WSDRwrapper {
+    display: block;
+    text-align: center;
+    grid-column: 8/13;
+    grid-row: 31/32;
+  }
+
+  .cta-WSDR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 65%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSDR:hover {
+    color: #032733;
+  }
+
+  .WSSDirectingyWhitePict {
+    grid-column: 2/7;
+    grid-row: 26/32;
+    background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+
+  /*WSVOGrey*/
+
+  .WSVOGrey {
+    grid-column: 1/15;
+    grid-row: 34/42;
+    background-color: white;
+  }
+
+  .WSVOGreyTitle {
+    grid-column: 2/5;
+    grid-row: 34/36;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    background-color: white;
+    padding-top: 50px;
+  }
+
+  .WSVOGreyBox {
+    border-style: solid;
+    grid-column: 2/14;
+    grid-row: 35/41;
+    border-width: 5px;
+    border-color: #032733;
+  }
+
+  .WSVOGreyP {
+    grid-column: 3/8;
+    grid-row: 36/39;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .WSlilaLama{
+    grid-column: 6/14;
+    grid-row: 40/41;
+    padding-top: 10px;
+    padding-left: 20px;
+    color:#032733;
+    font-family: futura PT, sans-serif;
+  
+  }
+
+  .WSAudioControls {
+    grid-column: 6/14;
+    grid-row: 40/41;
+    display: flex;
+    align-content: center;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .cta-WSV0Rwrapper {
+    display: block;
+    text-align: center;
+    grid-column: 9/13;
+    grid-row: 37/39;
+    padding-top: 40px;
+  }
+
+  .cta-WSV0R {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSV0R:hover {
+    color: #032733;
+  }
+
+  /*Gallery*/
+
+  .WSGalleryTitle {
+    grid-column: 2/5;
+    grid-row: 41/43;
+  }
+
+  .WSGalleryBox {
+    display: none;
+  }
+
+  .gallery {
+    grid-column: 2/14;
+    grid-row: 43/57;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 10px;
+  }
+
+  .galleryImage1 {
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    grid-column: 2/4;
+    padding: 0;
+  }
+
+  .Nested1 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+/*
+  .Image1ModalClass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #032733;
+    opacity: 0.75;
+  }
+
+  .Image1Modal-Content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 85%;
+  }
+
+  .modal-content {
+    margin: auto;
+    width: 85%;
+  }
+
+  .close {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+  }
+*/
+  .Nested2 {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+
+  .Nested3 {
+    grid-row: 1/5;
+    grid-column: 3/3;
+  }
+
+  .Nested4 {
+    grid-row: 3/5;
+    grid-column: 1/3;
+  }
+
+  .Nested5 {
+    grid-row: 5/7;
+    grid-column: 1/2;
+  }
+
+  .Nested6 {
+    grid-row: 5/7;
+    grid-column: 2/4;
+  }
+
+  .Image1 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image2 {
+    object-fit: cover;
+    object-position: 75% 35%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image3 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image4 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image5 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image6 {
+    object-fit: cover;
+    object-position: 75% 12%;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+  .cta-WSCMwrapper {
+    display: block;
+    text-align: center;
+    margin: 0;
+    grid-column: 5/11;
+    grid-row: 56/57;
+  }
+
+  .cta-WSCM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSCM:hover {
+    color: #032733;
+  }
+
+  .WSendBuffer {
+    grid-row: 57/58;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: #032733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footEmail {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footCopyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .NavThingy {
+    display: none;
+  }
+
+  .NavInsurance {
+    display: none;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 1/12;
+    grid-row: 1/2;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+   /*hamburger menu*/
+   .hamburger{
+    grid-column: 13/15;
+    grid-row: 1/2;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .overlay a{
+    font-size:20px;
+  }
+
+  .overlay .closbtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  /* mobile overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+  .overlay{ 
+    font-family: futura PT, sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #032733;
+    background-color: rgba (0,0,0,.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .overlay a{
+   
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ /*End of Hamburger Menu*/
+
+  
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/-1;
+    grid-row: 3/8;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/10;
+    grid-row: 3/5;
+    padding: 25px 0px 0px 0px;
+    font-size: 2.75rem;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/12;
+    grid-row: 6/8;
+    padding-top: 45px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+  a.cta-AR {
+    color: white;
+  }
+
+
+
+  .Hleft3 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 8/14;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/8;
+    grid-row: 15/16;
+    padding-top: 25px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 17/34;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-column: 1/-1;
+    background-color: #032733;
+    grid-row: 17/34;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 17/23;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 23/28;
+    padding-top: 35px;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 28/34;
+    padding-top: 35px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    background-color: #ececec;
+    grid-column: 1/-1;
+    grid-row: 37/45;
+    border: none;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 38/40;
+    padding-top: 50px;
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    color: #032733;
+  }
+
+  .StageActing {
+    grid-column: 2/10;
+    grid-row: 40/41;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .StageActingPic {
+    grid-column: 1/-1;
+    grid-row: 34/38;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 0;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/12;
+    grid-row: 41/42;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP2 {
+    grid-column: 2/12;
+    grid-row: 42/43;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 2/12;
+    grid-row: 43/44;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    display: none;
+  }
+
+  .HDirectingPast {
+    grid-column: 2/10;
+    grid-row: 45/47;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 70px;
+    color: #032733;
+  }
+
+  .HDirectingPic {
+    display: none;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 47/48;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 48/49;
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 49/51;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    grid-column: 1/-1;
+    grid-row: 51/78;
+    border-width: 5px;
+    background-color: #ececec;
+    border: none;
+  }
+
+  .HVO {
+    grid-column: 2/10;
+    grid-row: 51/52;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .Hbook1 {
+    grid-column: 2/14;
+    grid-row: 53/59;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook1:hover {
+    width: 103%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 2/14;
+    grid-row: 61/68;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook2:hover {
+    width: 103%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook3 {
+    grid-column: 2/14;
+    grid-row: 69/76;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100%;
+  }
+
+  .Hbook3:hover {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .IendBuffer {
+    grid-row: 76/78;
+    grid-column: 1/-1;
+    background-color: #ececec;
+  }
+
+  /*Work Services*/
+
+  #WShero {
+    background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+    grid-column: 1/15;
+    grid-row: 3/7;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+  }
+
+  .WSheroText {
+    grid-column: 2/13;
+    grid-row: 7/9;
+    color: #32464f;
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+  }
+
+ 
+
+  /*Stage Acting Block*/
+  .WSStageActingClickable {
+    grid-column: 2/5;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSStageActingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSstageActingBlock {
+    color: white;
+  }
+
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  .StageActingBlockP {
+    grid-column: 2/5;
+    grid-row: 10/11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  /*Directing Block*/
+  .WSDirectingClickable {
+    grid-column: 6/9;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSDirectingBlock {
+    color: white;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  .WSDirectingBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  /* VO Clickable*/
+
+  .WSVOClickable {
+    grid-column: 10/13;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSVOBlock {
+    color: white;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  .WSVOBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  /*WSSStageActingGrey*/
+
+  .WSSStageActingGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 12/13;
+  }
+
+  .WSStageActing {
+    grid-column: 2/14;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSStageActingGreyPict {
+    grid-column: 1/-1;
+    grid-row: 13/17;
+    width: 100%;
+    height: auto;
+    background-position: 100% 20%;
+    background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .WSStageActingGrey {
+    grid-column: 1/-1;
+    grid-row: 16/20;
+    background-color: white;
+  }
+
+  .WSSStageActingP {
+    margin-top: 30px;
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 17/20;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 21/22;
+    text-align: center;
+  }
+
+  .cta-WSAR {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSAR:hover {
+    color: #032733;
+  }
+
+  /*WSDirectingWhite*/
+
+  .WSDirectingyWhiteBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 23/24;
+  }
+
+  .WSSDirectingWhite {
+    grid-column: 2/14;
+    grid-row: 23/24;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSSDirectingyWhitePict {
+    grid-column: 1/-1;
+    grid-row: 24/28;
+    background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+    background-repeat: no-repeat;
+    background-position: 150% 10%;
+    background-size: cover;
+  }
+
+  .WSDirectingGrey {
+    grid-column: 1/-1;
+    grid-row: 23/34;
+    background-color: #ececec;
+  }
+
+  .WSSDirectingWhiteP {
+    margin-top: 30px;
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 28/31;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSDRwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 32/33;
+    text-align: center;
+  }
+
+  .cta-WSDR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 65%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSDR:hover {
+    color: #032733;
+  }
+
+  /*WSVOGrey*/
+
+  .WSVOGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 34/35;
+  }
+
+  .WSVOGrey {
+    grid-column: 1/15;
+    grid-row: 34/41;
+    background-color: white;
+  }
+
+  .WSVOGreyTitle {
+    grid-column: 2/15;
+    grid-row: 34/35;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSlilaLama{
+    grid-column: 4/14;
+    grid-row: 34/35;
+    padding-top: 80px;
+    padding-left: 20px;
+    color:#032733;
+    font-family: futura PT, sans-serif;
+  
+  }
+
+  .WSAudioControls {
+    grid-column: 4/14;
+    grid-row: 35/37;
+    display: flex;
+    align-content: center;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  
+
+  .WSVOGreyP {
+    grid-column: 3/14;
+    grid-row: 37/40;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding-top: 10px;
+  }
+
+  .cta-WSV0Rwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 40/41;
+    text-align: center;
+  }
+
+  .cta-WSV0R {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSV0R:hover {
+    color: #032733;
+  }
+
+  /*Gallery*/
+
+  .WSGalleryTitle {
+    grid-column: 1/-1;
+    grid-row: 43/44;
+    background-color: #032733;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .WSGalleryBox {
+    grid-column: 1/-1;
+    grid-row: 42/43;
+    background-color: #032733;
+  }
+
+  .gallery {
+    grid-column: 1/-1;
+    grid-row: 44/105;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 10px;
+  }
+
+  .galleryImage1 {
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    grid-column: 1/-1;
+    padding: 0;
+  }
+
+  .Nested1 {
+    grid-row: 1/4;
+    grid-column: 1/-1;
+  }
+/*
+  .Image1ModalClass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #032733;
+    opacity: 0.75;
+  }
+
+  .Image1Modal-Content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 85%;
+  }
+
+  .modal-content {
+    margin: auto;
+    width: 85%;
+  }
+
+  .close {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+  }
+
+*/
+
+  .Nested2 {
+    grid-row: 4/7;
+    grid-column: 1/-1;
+  }
+
+  .Nested3 {
+    grid-row: 7/10;
+    grid-column: 1/-1;
+  }
+
+  .Nested4 {
+    grid-row: 10/13;
+    grid-column: 1/-1;
+  }
+
+  .Nested5 {
+    grid-row: 13/16;
+    grid-column: 1/-1;
+  }
+
+  .Nested6 {
+    grid-row: 16/19;
+    grid-column: 1/-1;
+  }
+
+  .Image1 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image2 {
+    object-fit: cover;
+    object-position: 75% 35%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image3 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image4 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image5 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image6 {
+    object-fit: cover;
+    object-position: 75% 12%;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+  .cta-WSCMwrapper {
+    display: none;
+  }
+
+  .cta-WSCM:hover {
+    color: #032733;
+  }
+
+  .WSendBuffer {
+    grid-row: 91/92;
+  }
+
+  @media only screen and (min-width: 728px) {
+    .hamburger {
+      display: none;
+    }
+    .mobileNav {
+      display: none;
+    }
+    .overlay {
+      display: none;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .Hleft1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .NavThingy {
+    display: none;
+  }
+
+  .NavInsurance {
+    display: none;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 2/12;
+    grid-row: 1/2;
+    padding-top: 50px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+   /*hamburger menu*/
+   .hamburger{
+    grid-column: 13/15;
+    grid-row: 1/2;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .overlay a{
+    font-size:20px;
+  }
+
+  .overlay .closbtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  /* mobile overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+  .overlay{ 
+    font-family: futura PT, sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #032733;
+    background-color: rgba (0,0,0,.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .overlay a{
+   
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ /*End of Hamburger Menu*/
+
+  .Hleft2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/8;
+    width: 100%;
+  }
+
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/-1;
+    grid-row: 3/9;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/10;
+    grid-row: 3/5;
+    padding: 25px 0px 0px 0px;
+    font-size: 2.75rem;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/12;
+    grid-row: 7/9;
+    padding-top: 25px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+
+  a.cta-AR {
+    color: white;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 9/18;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 18/19;
+    padding-top: 25px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 19/36;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-column: 1/-1;
+    background-color: #032733;
+    grid-row: 20/40;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 20/26;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 26/31;
+    padding-top: 35px;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 31/37;
+    padding-top: 35px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    background-color: #ececec;
+    grid-column: 1/-1;
+    grid-row: 40/48;
+    border: none;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 42/44;
+    padding-top: 50px;
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    color: #032733;
+  }
+
+  .StageActing {
+    grid-column: 2/10;
+    grid-row: 44/45;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .StageActingPic {
+    grid-column: 1/-1;
+    grid-row: 38/42;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 0;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/12;
+    grid-row: 45/46;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP2 {
+    grid-column: 2/12;
+    grid-row: 46/47;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 2/12;
+    grid-row: 47/48;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    display: none;
+  }
+
+  .HDirectingPast {
+    grid-column: 2/10;
+    grid-row: 48/50;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 70px;
+    color: #032733;
+  }
+
+  .HDirectingPic {
+    display: none;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 50/51;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 51/52;
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 52/53;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    grid-column: 1/-1;
+    grid-row: 54/77;
+    border-width: 5px;
+    background-color: #ececec;
+    border: none;
+  }
+
+  .HVO {
+    grid-column: 2/10;
+    grid-row: 54/56;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .Hbook1 {
+    grid-column: 2/14;
+    grid-row: 56/62;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook1:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 2/14;
+    grid-row: 63/69;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook2:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook3 {
+    grid-column: 2/14;
+    grid-row: 70/76;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100%;
+  }
+
+  .Hbook3:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .IendBuffer {
+    grid-row: 76/77;
+    grid-column: 1/-1;
+    background-color: #ececec;
+  }
+
+  /*Work Services*/
+
+  #WShero {
+    background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+    grid-column: 1/15;
+    grid-row: 3/7;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+  }
+
+  .WSheroText {
+    grid-column: 2/13;
+    grid-row: 7/9;
+    color: #32464f;
+    padding-top: 40px;
+    display: flex;
+    align-content: center;
+  }
+
+
+
+  /*Stage Acting Block*/
+  .WSStageActingClickable {
+    grid-column: 2/5;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSStageActingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSstageActingBlock {
+    color: white;
+  }
+
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  .StageActingBlockP {
+    grid-column: 2/5;
+    grid-row: 10/11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  /*Directing Block*/
+  .WSDirectingClickable {
+    grid-column: 6/9;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSDirectingBlock {
+    color: white;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  .WSDirectingBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  /* VO Clickable*/
+
+  .WSVOClickable {
+    grid-column: 10/13;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSVOBlock {
+    color: white;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  .WSVOBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  /*WSSStageActingGrey*/
+
+  .WSSStageActingGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 12/13;
+  }
+
+  .WSStageActing {
+    grid-column: 2/14;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSStageActingGreyPict {
+    grid-column: 1/-1;
+    grid-row: 13/17;
+    width: 100%;
+    height: auto;
+    background-position: 100% 20%;
+    background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .WSStageActingGrey {
+    grid-column: 1/-1;
+    grid-row: 16/20;
+    background-color: white;
+  }
+
+  .WSSStageActingP {
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 17/20;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 21/22;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .cta-WSAR {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSAR:hover {
+    color: #032733;
+  }
+
+  /*WSDirectingWhite*/
+
+  .WSDirectingyWhiteBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 23/24;
+  }
+
+  .WSSDirectingWhite {
+    grid-column: 2/14;
+    grid-row: 23/24;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSSDirectingyWhitePict {
+    grid-column: 1/-1;
+    grid-row: 24/28;
+    background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+    background-repeat: no-repeat;
+    background-position: 150% 10%;
+    background-size: cover;
+  }
+
+  .WSDirectingGrey {
+    grid-column: 1/-1;
+    grid-row: 23/34;
+    background-color: #ececec;
+  }
+
+  .WSSDirectingWhiteP {
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 28/31;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSDRwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 32/33;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .cta-WSDR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 65%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSDR:hover {
+    color: #032733;
+  }
+
+  /*WSVOGrey*/
+
+  .WSVOGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 34/35;
+  }
+
+  .WSVOGrey {
+    grid-column: 1/15;
+    grid-row: 34/41;
+    background-color: white;
+  }
+
+  .WSVOGreyTitle {
+    grid-column: 2/15;
+    grid-row: 34/35;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSlilaLama{
+    grid-column: 3/14;
+    grid-row: 34/35;
+    padding-top: 80px;
+    padding-left: 20px;
+    color:#032733;
+    font-family: futura PT, sans-serif;
+  
+  }
+
+  .WSAudioControls {
+    grid-column: 3/14;
+    grid-row: 35/36;
+    display: flex;
+    align-content: center;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .WSVOGreyP {
+    grid-column: 3/14;
+    grid-row: 37/41;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+  }
+
+  .cta-WSV0Rwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 40/41;
+    text-align: center;
+  }
+
+  .cta-WSV0R {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSV0R:hover {
+    color: #032733;
+  }
+
+  /*Gallery*/
+
+  .WSGalleryTitle {
+    grid-column: 1/-1;
+    grid-row: 43/44;
+    background-color: #032733;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .WSGalleryBox {
+    grid-column: 1/-1;
+    grid-row: 42/43;
+    background-color: #032733;
+  }
+
+  .gallery {
+    grid-column: 1/-1;
+    grid-row: 44/90;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 10px;
+  }
+
+  .galleryImage1 {
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    grid-column: 1/-1;
+    padding: 0;
+  }
+
+  .Nested1 {
+    grid-row: 1/4;
+    grid-column: 1/-1;
+  }
+/*
+  .Image1ModalClass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #032733;
+    opacity: 0.75;
+  }
+
+  .Image1Modal-Content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 85%;
+  }
+
+  .modal-content {
+    margin: auto;
+    width: 85%;
+  }
+
+  .close {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+  }
+
+*/
+
+  .Nested2 {
+    grid-row: 4/7;
+    grid-column: 1/-1;
+  }
+
+  .Nested3 {
+    grid-row: 7/10;
+    grid-column: 1/-1;
+  }
+
+  .Nested4 {
+    grid-row: 10/13;
+    grid-column: 1/-1;
+  }
+
+  .Nested5 {
+    grid-row: 13/16;
+    grid-column: 1/-1;
+  }
+
+  .Nested6 {
+    grid-row: 16/19;
+    grid-column: 1/-1;
+  }
+
+  .Image1 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image2 {
+    object-fit: cover;
+    object-position: 75% 35%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image3 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image4 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image5 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image6 {
+    object-fit: cover;
+    object-position: 75% 12%;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+  a.cta-WSCMwrapper {
+    color: white;
+  }
+  .cta-WSCMwrapper {
+    display: none;
+  }
+
+  .cta-WSCM:hover {
+    color: #032733;
+  }
+
+  .WSendBuffer {
+    grid-row: 91/92;
+  }
+
+  /* footer */
+
+
+}
+
+@media only screen and (min-width: 728px) {
+  .hamburger {
+    display: none;
+  }
+  .mobileNav {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+   p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .Hleft1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .NavThingy {
+    display: none;
+  }
+
+  .NavInsurance {
+    display: none;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 2/12;
+    grid-row: 1/2;
+    padding-top: 60px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+   /*hamburger menu*/
+   .hamburger{
+    grid-column: 13/15;
+    grid-row: 1/2;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .overlay a{
+    font-size:20px;
+  }
+
+  .overlay .closbtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  /* mobile overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+  .overlay{ 
+    font-family: futura PT, sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #032733;
+    background-color: rgba (0,0,0,.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .overlay a{
+   
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ /*End of Hamburger Menu*/
+
+ 
+
+  .Hleft2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/8;
+    width: 100%;
+  }
+
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/-1;
+    grid-row: 3/9;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/15;
+    grid-row: 3/5;
+    padding: 25px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/15;
+    grid-row: 7/9;
+    padding-top: 25px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+
+  a.cta-AR {
+    color: white;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 9/18;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.25rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 20/21;
+    padding: 0px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 19/36;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-column: 1/-1;
+    background-color: #032733;
+    grid-row: 22/40;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 22/28;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 28/33;
+    padding-top: 35px;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 33/38;
+    padding-top: 35px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    background-color: #ececec;
+    grid-column: 1/-1;
+    grid-row: 44/50;
+    border: none;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 44/46;
+    padding-top: 25px;
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    color: #032733;
+  }
+
+  .StageActing {
+    grid-column: 2/10;
+    grid-row: 46/47;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .StageActingPic {
+    grid-column: 1/-1;
+    grid-row: 40/44;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 0;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 47/48;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP2 {
+    grid-column: 2/14;
+    grid-row: 48/49;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 2/14;
+    grid-row: 49/50;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    display: none;
+  }
+
+  .HDirectingPast {
+    grid-column: 2/10;
+    grid-row: 50/51;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 70px;
+    color: #032733;
+  }
+
+  .HDirectingPic {
+    display: none;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/16;
+    grid-row: 52/53;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/15;
+    grid-row: 53/54;
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/15;
+    grid-row: 54/55;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    grid-column: 1/-1;
+    grid-row: 56/75;
+    border-width: 5px;
+    background-color: #ececec;
+    border: none;
+  }
+
+  .HVO {
+    grid-column: 2/10;
+    grid-row: 56/58;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .Hbook1 {
+    grid-column: 2/14;
+    grid-row: 58/64;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook1:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 2/14;
+    grid-row: 64/70;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook2:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook3 {
+    grid-column: 2/14;
+    grid-row: 70/76;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100%;
+  }
+
+  .Hbook3:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .IendBuffer {
+    grid-row: 75/76;
+    grid-column: 1/-1;
+    background-color: #ececec;
+  }
+
+  /*Work Services*/
+
+  #WShero {
+    background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+    grid-column: 1/15;
+    grid-row: 3/7;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .WSheroText {
+    grid-column: 2/14;
+    grid-row: 7/9;
+    color: #32464f;
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+  }
+
+ 
+
+  /*Stage Acting Block*/
+  .WSStageActingClickable {
+    grid-column: 1/5;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSStageActingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSstageActingBlock {
+    color: white;
+  }
+
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  .StageActingBlockP {
+    grid-column: 2/5;
+    grid-row: 10/11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  /*Directing Block*/
+  .WSDirectingClickable {
+    grid-column: 6/10;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSDirectingBlock {
+    color: white;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  .WSDirectingBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  /* VO Clickable*/
+
+  .WSVOClickable {
+    grid-column: 11/15;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSVOBlock {
+    color: white;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  .WSVOBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  /*WSSStageActingGrey*/
+
+  .WSSStageActingGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 12/13;
+  }
+
+  .WSStageActing {
+    grid-column: 2/14;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSStageActingGreyPict {
+    grid-column: 1/-1;
+    grid-row: 13/17;
+    width: 100%;
+    height: auto;
+    background-position: 100% 20%;
+    background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .WSStageActingGrey {
+    grid-column: 1/-1;
+    grid-row: 16/20;
+    background-color: white;
+  }
+
+  .WSSStageActingP {
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 17/20;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSARwrapper {
+    display: block;
+    text-align: center;
+    grid-column: 1/15;
+    grid-row: 21/23;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .cta-WSAR {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSAR:hover {
+    color: #032733;
+  }
+
+  /*WSDirectingWhite*/
+
+  .WSDirectingyWhiteBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 23/24;
+  }
+
+  .WSSDirectingWhite {
+    grid-column: 2/14;
+    grid-row: 23/24;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSSDirectingyWhitePict {
+    grid-column: 1/-1;
+    grid-row: 24/28;
+    background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+    background-repeat: no-repeat;
+    background-position: 150% 10%;
+    background-size: cover;
+  }
+
+  .WSDirectingGrey {
+    grid-column: 1/-1;
+    grid-row: 23/34;
+    background-color: #ececec;
+  }
+
+  .WSSDirectingWhiteP {
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 28/31;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSDRwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 1/15;
+    grid-row: 32/33;
+    text-align: center;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .cta-WSDR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 65%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSDR:hover {
+    color: #032733;
+  }
+
+  /*WSVOGrey*/
+
+  .WSVOGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 34/35;
+  }
+
+  .WSVOGrey {
+    grid-column: 1/15;
+    grid-row: 34/41;
+    background-color: white;
+  }
+
+  .WSVOGreyTitle {
+    grid-column: 2/15;
+    grid-row: 34/35;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSlilaLama{
+    grid-column: 2/14;
+    grid-row: 34/35;
+    padding-top: 80px;
+    padding-left: 20px;
+    color:#032733;
+    font-family: futura PT, sans-serif;
+  
+  }
+
+  .WSAudioControls {
+    grid-column: 2/14;
+    grid-row: 35/36;
+    display: flex;
+    align-content: center;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .WSVOGreyP {
+    grid-column: 3/14;
+    grid-row: 37/41;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+  }
+
+  .cta-WSV0Rwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 40/41;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .cta-WSV0R {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSV0R:hover {
+    color: #032733;
+  }
+
+  /*Gallery*/
+
+  .WSGalleryTitle {
+    grid-column: 1/-1;
+    grid-row: 43/44;
+    background-color: #032733;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .WSGalleryBox {
+    grid-column: 1/-1;
+    grid-row: 42/43;
+    background-color: #032733;
+  }
+
+  .gallery {
+    grid-column: 1/-1;
+    grid-row: 44/90;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 10px;
+  }
+
+  .galleryImage1 {
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    grid-column: 1/-1;
+    padding: 0;
+  }
+
+  .Nested1 {
+    grid-row: 1/4;
+    grid-column: 1/-1;
+  }
+/*
+  .Image1ModalClass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #032733;
+    opacity: 0.75;
+  }
+
+  .Image1Modal-Content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 85%;
+  }
+
+  .modal-content {
+    margin: auto;
+    width: 85%;
+  }
+
+  .close {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+  }
+
+*/
+
+  .Nested2 {
+    grid-row: 4/7;
+    grid-column: 1/-1;
+  }
+
+  .Nested3 {
+    grid-row: 7/10;
+    grid-column: 1/-1;
+  }
+
+  .Nested4 {
+    grid-row: 10/13;
+    grid-column: 1/-1;
+  }
+
+  .Nested5 {
+    grid-row: 13/16;
+    grid-column: 1/-1;
+  }
+
+  .Nested6 {
+    grid-row: 16/19;
+    grid-column: 1/-1;
+  }
+
+  .Image1 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image2 {
+    object-fit: cover;
+    object-position: 75% 35%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image3 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image4 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image5 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image6 {
+    object-fit: cover;
+    object-position: 75% 12%;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+  a.cta-WSCMwrapper {
+    color: white;
+  }
+  .cta-WSCMwrapper {
+    display: none;
+  }
+
+  .cta-WSCM:hover {
+    color: #032733;
+  }
+
+  .WSendBuffer {
+    grid-row: 91/92;
+  }
+
+ 
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /*There are 5 columns total, 2 are the wrapper, and the middle three make up the body*/
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+    /*grid-template-rows: repeat(65, 75px);*/
+    /*Each row is about 185px high*/
+  }
+
+  p a:link {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:visited {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:active {
+    color: #032733;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    color: #032733;
+    text-decoration: none;
+    color: #90c7cf;
+  }
+
+  .Layer_1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .Hleft1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .NavThingy {
+    display: none;
+  }
+
+  .NavInsurance {
+    display: none;
+  }
+
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+
+  .logo {
+    grid-column: 1/12;
+    grid-row: 1/2;
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+
+  .logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-content: center;
+    object-position: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  /*hamburger menu*/
+  .hamburger{
+    grid-column: 13/15;
+    grid-row: 1/2;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .overlay a{
+    font-size:20px;
+  }
+
+  .overlay .closbtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  /* mobile overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+  .overlay{ 
+    font-family: futura PT, sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #032733;
+    background-color: rgba (0,0,0,.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .overlay a{
+   
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ /*End of Hamburger Menu*/
+
+  .Hleft2 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/8;
+    width: 100%;
+  }
+
+  #Hhero {
+    background-image: url("websiteContentOpt/MAHHero-min.jpg");
+    grid-column: 1/-1;
+    grid-row: 3/9;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .HheroText {
+    grid-column: 2/15;
+    grid-row: 3/5;
+    padding: 25px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+
+  /*Calls to Action buttons*/
+
+  /* acting resume */
+
+  .cta-ARwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/15;
+    grid-row: 7/9;
+    padding-top: 20px;
+  }
+
+  .cta-AR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-AR:hover {
+    color: #032733;
+  }
+
+  a.cta-AR {
+    color: white;
+  }
+
+  .HBlock1 {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 9/18;
+    color: #032733;
+  }
+
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 3;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.25rem;
+  }
+
+  .cta-CMwrapper {
+    display: block;
+    text-align: left;
+    margin: 0;
+    grid-column: 2/12;
+    grid-row: 20/21;
+    padding: 0px;
+  }
+
+  .cta-CM {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 2.5em;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-CM:hover {
+    color: #032733;
+  }
+
+  a.cta-CM {
+    color: white;
+  }
+  .HBlock2 {
+    display: grid;
+    grid-row: 14/15;
+    grid-column: 2/4;
+    background-color: #032733;
+  }
+
+  .HSelectedPastWorksFullWidth {
+    grid-row: 19/36;
+    grid-column: 1/-1;
+    background-color: #032733;
+  }
+
+  .HServicesbackground {
+    grid-column: 1/-1;
+    background-color: #032733;
+    grid-row: 22/40;
+  }
+
+  .HServices1 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 22/28;
+    padding-top: 70px;
+  }
+
+  .HServices2 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 28/33;
+    padding-top: 35px;
+  }
+
+  .HServices3 {
+    color: #ffffff;
+    grid-column: 2/14;
+    grid-row: 33/38;
+    padding-top: 35px;
+  }
+
+  /*Selected Past Works*/
+
+  .HBoxStageActing {
+    background-color: #ececec;
+    grid-column: 1/-1;
+    grid-row: 44/50;
+    border: none;
+  }
+
+  .HSelectedPastWorks {
+    grid-column: 2/14;
+    grid-row: 44/46;
+    padding-top: 25px;
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    color: #032733;
+  }
+
+  .StageActing {
+    grid-column: 2/10;
+    grid-row: 46/47;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .StageActingPic {
+    grid-column: 1/-1;
+    grid-row: 40/44;
+    background-image: url("websiteContentOpt/ACyrano7957-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-left: 0;
+    object-position: 100% 100%;
+  }
+
+  .StageActingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/14;
+    grid-row: 47/48;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP2 {
+    grid-column: 2/14;
+    grid-row: 48/49;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .StageActingP3 {
+    grid-column: 2/14;
+    grid-row: 49/50;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* Directing */
+
+  .HBoxDirecting {
+    display: none;
+  }
+
+  .HDirectingPast {
+    grid-column: 2/10;
+    grid-row: 50/51;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    padding-left: 0px;
+    padding-top: 70px;
+    color: #032733;
+  }
+
+  .HDirectingPic {
+    display: none;
+  }
+
+  .HDirectingP1 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/16;
+    grid-row: 52/53;
+    padding: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP2 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/15;
+    grid-row: 53/54;
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  .HDirectingP3 {
+    display: flex;
+    align-content: center;
+    grid-column: 2/15;
+    grid-row: 54/55;
+    padding-left: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #032733;
+    font-size: 1.25rem;
+  }
+
+  /* VO */
+
+  .HBoxVO {
+    grid-column: 1/-1;
+    grid-row: 56/75;
+    border-width: 5px;
+    background-color: #ececec;
+    border: none;
+  }
+
+  .HVO {
+    grid-column: 2/10;
+    grid-row: 56/58;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: #032733;
+    background-color: #ececec;
+  }
+
+  .Hbook1 {
+    grid-column: 2/14;
+    grid-row: 58/64;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook1:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook2 {
+    grid-column: 2/14;
+    grid-row: 64/70;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 80%;
+  }
+
+  .Hbook2:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Hbook3 {
+    grid-column: 2/14;
+    grid-row: 70/76;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100%;
+  }
+
+  .Hbook3:hover {
+    width: 105%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .IendBuffer {
+    grid-row: 75/76;
+    grid-column: 1/-1;
+    background-color: #ececec;
+  }
+
+  /*Work Services*/
+  #WShero {
+    background-image: url("websiteContentOpt/ACocoanuts-0669-min.jpg");
+    grid-column: 1/15;
+    grid-row: 3/7;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .WSheroText {
+    grid-column: 2/15;
+    grid-row: 7/9;
+    color: #32464f;
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+    font-size: 2.3rem;
+  }
+
+ 
+
+  /*Stage Acting Block*/
+  .WSStageActingClickable {
+    grid-column: 1/6;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSStageActingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSstageActingBlock {
+    color: white;
+  }
+
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  .StageActingBlockP {
+    grid-column: 2/5;
+    grid-row: 10/11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+  }
+  .WSstageActingBlock {
+    color: white;
+  }
+
+  /*Directing Block*/
+  .WSDirectingClickable {
+    grid-column: 6/11;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSDirectingBlock {
+    color: white;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  .WSDirectingBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSDirectingClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSDirectingBlock {
+    color: white;
+  }
+
+  /* VO Clickable*/
+
+  .WSVOClickable {
+    grid-column: 11/15;
+    grid-row: 8/11;
+    background-color: #032733;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 25px;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  .WSVOBlock {
+    color: white;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  .WSVOBlockP {
+    grid-column: 6/9;
+    grid-row: 11/12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 1.5rem;
+  }
+
+  .WSVOClickable:hover {
+    background-color: #577b80;
+  }
+
+  a.WSVOBlock {
+    color: white;
+  }
+
+  /*WSSStageActingGrey*/
+
+  .WSSStageActingGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 12/13;
+  }
+
+  .WSStageActing {
+    grid-column: 2/14;
+    grid-row: 12/13;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSStageActingGreyPict {
+    grid-column: 1/-1;
+    grid-row: 13/17;
+    width: 100%;
+    height: auto;
+    background-position: 100% 20%;
+    background-image: url("websiteContentOpt/TroilusFighting-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .WSStageActingGrey {
+    grid-column: 1/-1;
+    grid-row: 16/20;
+    background-color: white;
+  }
+
+  .WSSStageActingP {
+    padding: 0;
+    grid-column: 3/14;
+    grid-row: 17/20;
+    color: #032733;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+  
+  }
+
+  .cta-WSARwrapper {
+    display: block;
+    text-align: center;
+    grid-column: 1/15;
+    
+    grid-row: 21/23;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .cta-WSAR {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSAR:hover {
+    color: #032733;
+  }
+
+  /*WSDirectingWhite*/
+
+  .WSDirectingyWhiteBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 23/24;
+  }
+
+  .WSSDirectingWhite {
+    grid-column: 2/14;
+    grid-row: 23/24;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSSDirectingyWhitePict {
+    grid-column: 1/-1;
+    grid-row: 24/28;
+    background-image: url("websiteContentOpt/AFoxfire6395-min.jpg");
+    background-repeat: no-repeat;
+    background-position: 150% 10%;
+    background-size: cover;
+  }
+
+  .WSDirectingGrey {
+    grid-column: 1/-1;
+    grid-row: 23/34;
+    background-color: #ececec;
+  }
+
+  .WSSDirectingWhiteP {
+    padding-top: 10px;
+    grid-column: 3/14;
+    grid-row: 28/31;
+    color: #032733;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cta-WSDRwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 1/15;
+    grid-row: 32/33;
+    text-align: center;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .cta-WSDR {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 65%;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSDR:hover {
+    color: #032733;
+  }
+
+  /*WSVOGrey*/
+
+  .WSVOGreyBox {
+    background-color: #032733;
+    grid-column: 1/-1;
+    grid-row: 35/36;
+  }
+
+  .WSVOGrey {
+    grid-column: 1/15;
+    grid-row: 35/41;
+    background-color: white;
+  }
+
+  .WSVOGreyTitle {
+    grid-column: 2/15;
+    grid-row: 35/36;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    background-color: #032733;
+    color: white;
+  }
+
+  .WSlilaLama{
+    grid-column: 2/14;
+    grid-row: 35/36;
+    padding-top: 80px;
+    padding-left: 20px;
+    color:#032733;
+    font-family: futura PT, sans-serif;
+  
+  }
+
+  .WSAudioControls {
+    grid-column: 2/8;
+    grid-row: 36/37;
+    display: flex;
+    align-content: center;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .WSVOGreyP {
+    grid-column: 3/14;
+    grid-row: 37/42;
+    margin-top: 25px;
+    color: #032733;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+    font-size: 1.1rem;
+  }
+
+  .cta-WSV0Rwrapper {
+    display: block;
+    text-align: left;
+    grid-column: 2/14;
+    grid-row: 40/41;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .cta-WSV0R {
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: orange;
+    box-shadow: 2px 2px 2px orange;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    width: 50%;
+    text-decoration: none;
+
+    font-family: futura PT, sans-serif;
+  }
+
+  .cta-WSV0R:hover {
+    color: #032733;
+  }
+
+  /*Gallery*/
+
+  .WSGalleryTitle {
+    grid-column: 1/-1;
+    grid-row: 43/44;
+    background-color: #032733;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .WSGalleryBox {
+    grid-column: 1/-1;
+    grid-row: 42/43;
+    background-color: #032733;
+  }
+
+  .gallery {
+    grid-column: 1/-1;
+    grid-row: 44/90;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-gap: 10px;
+  }
+
+  .galleryImage1 {
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    grid-column: 1/-1;
+    padding: 0;
+  }
+
+  .Nested1 {
+    grid-row: 1/4;
+    grid-column: 1/-1;
+  }
+/*
+  .Image1ModalClass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #032733;
+    opacity: 0.75;
+  }
+
+  .Image1Modal-Content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 85%;
+  }
+
+  .modal-content {
+    margin: auto;
+    width: 85%;
+  }
+
+  .close {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+  }
+*/
+
+
+  .Nested2 {
+    grid-row: 4/7;
+    grid-column: 1/-1;
+  }
+
+  .Nested3 {
+    grid-row: 7/10;
+    grid-column: 1/-1;
+  }
+
+  .Nested4 {
+    grid-row: 10/13;
+    grid-column: 1/-1;
+  }
+
+  .Nested5 {
+    grid-row: 13/16;
+    grid-column: 1/-1;
+  }
+
+  .Nested6 {
+    grid-row: 16/19;
+    grid-column: 1/-1;
+  }
+
+  .Image1 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image2 {
+    object-fit: cover;
+    object-position: 75% 35%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image3 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image4 {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image5 {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Image6 {
+    object-fit: cover;
+    object-position: 75% 12%;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Source for image code in gallery: https://www.youtube.com/watch?v=BbKY4rR3Vls*/
+
+  a.cta-WSCMwrapper {
+    color: white;
+  }
+  .cta-WSCMwrapper {
+    display: none;
+  }
+
+  .cta-WSCM:hover {
+    color: #032733;
+  }
+
+  .WSendBuffer {
+    grid-row: 91/92;
+  }
+
+
+
+ 
+  @media only screen and (min-width: 320px) {
+    .hamburger {
+      display: none;
+    }
+    .mobileNav {
+      display: none;
+    }
+    .overlay {
+      display: none;
+    }
+  }
+
+}
+
